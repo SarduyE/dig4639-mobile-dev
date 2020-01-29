@@ -8,15 +8,9 @@ This is a different change.
 The *ice* folder contains in-class exercises. 
 
 ## About Me
-<<<<<<< HEAD
 Elizabeth Sarduy 
 https://www.linkedin.com/in/elizabeth-sarduy-bab6ab171/
 
 I'm looking to target a position in UX/UI development. I would like to focus on front-end design and visual identity along with research development for UX purposes. 
 
 
-=======
-This should be replaced.
-
-This is the change.
->>>>>>> 41965ee10b08e77bdb004c683fe44186a129778b
