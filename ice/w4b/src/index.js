@@ -13,7 +13,6 @@ function runOnLoad()
     // container.appendChild(element2);
     // console.log("Hello World truly");
 
-
     let container = document.createElement('container');
     console.log(container);
     let task = document.createElement('div');
