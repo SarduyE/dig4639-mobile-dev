@@ -1,6 +1,12 @@
 # Understanding the Component Model in React
 Working in a team of 2-3, start with the code in ice/w5a in the class repository.
 
+# Team Members
+- https://github.com/SarduyE/dig4639-mobile-dev.git - Elizabeth Sarduy Rodriguez 
+- https://github.com/Crisiskyle/dig4639-mobile-dev  - Kyle Melendez
+- https://github.com/LodesJacob/dig4639-mobile-dev - Jacob Lodes
+ - All of our changes are under Elizabeth's git repository
+
 ## TODO App Requirements
 
   - Refactor (by moving) the HTML currently in the file to be rendered by the “Task” class.

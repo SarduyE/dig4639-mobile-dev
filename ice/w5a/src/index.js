@@ -1,60 +1,45 @@
-// var Task = require('./components/Task.js');
+import Task from './components/Task/index.js';
 let element = undefined;
-let taskInput
-function runOnLoad()
-{
+let taskInput;
+function runOnLoad() {
     console.log('on page load');
     // Create a container for us
     element = document.createElement("div");
     element.id = "container";
     document.body.appendChild(element);
 
+
     // Handle adding a new task
     var addTaskButton = document.getElementById("addTask");
-        addTaskButton.addEventListener("click", onClick);
-        taskInput = document.getElementById("tasktext");
-}      
-function onClick() {
-    console.log('running onclick');
+    var input = document.getElementById('taskText');
+    addTaskButton.addEventListener("click", function() {
+        onClick({ content: input.value, done: false });
+    });
+    taskInput = document.getElementById("tasktext");
 
-    var taskInput = document.getElementById('taskText');
+    var existingTasks = [
+        { content: 'Existing Task 1', done: false },
+        { content: 'Existing Task 2', done: true },
+        { content: 'Existing Task 3', done: false }
+    ]
 
-    if ( taskInput.value ) {
-        let newTask = document.createElement('div');
-
-        //the input for each task
-        let input = document.createElement('input');
-        input.type = 'checkbox';
-        input.value = `${taskInput.value}`;
-        input.addEventListener('change', function() {
-            if (this.checked == true) {
-                console.log('checked');
-                console.log(input.value);
-                input.nextSibling.style.textDecoration = 'line-through';
-            } else {
-                console.log('unchecked');
-                console.log(input.value);
-                input.nextSibling.style.textDecoration = 'unset';
-            }
-        });
-        newTask.append(input);
-
-        //the span
-        let span = document.createElement('span');
-        span.innerHTML = `${taskInput.value}`;
-        newTask.appendChild(span);
-
-        
-        // newTask.innerHTML();
-        element.appendChild(newTask);
+    for ( var i = 0; i < existingTasks.length; i++ ) {
+        console.log('existing task ' + i);
+        onClick(existingTasks[i]);
     }
-    // var props = {
-    //     x: 'testx',
-    //     y: 'testy'
-    // }
-    // let newTask = new Task(props);
+}
+//Task 1    
+function onClick( taskContent ) {
+    console.log('onclick');
+    var input = document.getElementById('taskText');
 
-    // newTask.render();
+    if (input.value) {
+        console.log('running onclick');
+        let newTask = new Task(taskContent);
+        element.appendChild(newTask.render( taskContent ));
+        input.value = '';
+    }
+
 }
 
 window.addEventListener('DOMContentLoaded', runOnLoad);
