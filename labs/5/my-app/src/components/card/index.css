@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+.cards{
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  background-color:rgba(44, 130, 201, 1) ;
+   transition: 0.3s;
+  max-width: 80%;
+  margin: 1em auto;
+  text-align: center;
+  padding: 1em;
+  border-radius: 5px;
+  width: 200px;
+  height: 250px;
+  float: left;
+
+  margin: 20px;
+  display: block;
+  font-size:30px;
+  
+}
+
+.cards:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+ 
+}
+
