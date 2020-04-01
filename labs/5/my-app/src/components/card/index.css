@@ -2,7 +2,7 @@
 
 
 
-.cards{
+.card{
   font-family: 'Roboto', sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   background-color:rgba(44, 130, 201, 1) ;
@@ -13,16 +13,15 @@
   padding: 1em;
   border-radius: 5px;
   width: 200px;
-  height: 250px;
+  height: 300px;
   float: left;
-
   margin: 20px;
   display: block;
-  font-size:30px;
+  font-size:15px;
   
 }
 
-.cards:hover{
+.card:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
  
 }
