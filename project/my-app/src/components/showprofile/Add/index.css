@@ -1,0 +1,44 @@
+
+.add{
+	background-color: white;
+	max-width: 500px;
+	margin: auto;
+	border: 3px solid grey;
+	text-align:center;
+  border-radius: 25px;
+
+
+}
+
+
+.text1{
+
+    width:200px;
+		color: black;
+		margin:15px;
+	
+}
+
+button {
+	background-color:#990000;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffff;
+	font-size:12px;
+	padding:10px 15px;
+	text-decoration:none;
+	margin: 20px;
+	width:100px;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+button:hover {
+    background-color: #b20000;
+    color: rgba(255, 255, 255, 0.932);
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+

@@ -1,0 +1,25 @@
+
+.count{
+  text-align: center;
+  background-color:white;
+  max-width: 500px;
+margin: auto;
+border: 3px solid grey;
+padding: 20px;
+position: absolute;
+top: 50px;
+left: 50px;
+opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+.count{
+  text-align: center;
+  background-color:white;
+  max-width: 500px;
+margin: auto;
+border: 3px solid grey;
+padding: 20px;
+}
+
+}
